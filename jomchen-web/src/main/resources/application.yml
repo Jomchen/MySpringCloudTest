@@ -4,7 +4,8 @@ spring:
   application:
     name:  service-web
   thymeleaf:
-    prefix:  classpath:/webapp/
+    prefix:  classpath:/webapp # 默认是 classpath:/templates/
+    suffix:  .html # 默认是 .html
   mvc:
 #    view:
 #      prefix:  /
@@ -12,7 +13,3 @@ spring:
     static-path-pattern:  /webapp/static/**
   resources:
     static-locations:  classpath:/webapp/static/
-    chain:
-      strategy:
-        content:
-          enabled:  true
