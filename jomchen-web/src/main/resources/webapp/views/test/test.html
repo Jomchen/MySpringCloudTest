@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" type="text/css" href="/webapp/static/common/bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/webapp/static/common/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/webapp/static/css/test.css"/>
+    <script type="text/javascript" src="/webapp/static/common/bootstrap/js/npm.js"></script>
+    <script type="text/javascript" src="/webapp/static/common/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/webapp/static/common/jquery/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/webapp/static/common/jquery/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/webapp/static/js/test.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="fu">
+            <div class="fu-contant-fu"/>
+        </div>
+        <div class="row row_00">
+            <div class="col00 col-md-4 col-xs-4">你好</div>
+            <div class="col01 col-md-4 col-xs-4">你好</div>
+            <div class="col02 col-md-4 col-xs-4">你好</div>
+        </div>
+        <div class="row row_row">
+            <div class="col-md-12 col-xs-12">
+                <button class="btn btn-success">按钮</button>
+            </div>
+        </div>
+        <div class="row row_01">
+            <div class="col-md-8 col-md-offset-2">
+                <table class="table table-hover table-striped table-bordered">
+                    <tr><td>李寻欢</td><td>22</td><td>京城</td><td>小李飞刀</td></tr>
+                    <tr><td>杨过</td><td>30</td><td>古墓派</td><td>玄铁重剑</td></tr>
+                    <tr><td>小龙女</td><td>42</td><td>古墓派</td><td>淑女剑</td></tr>
+                    <tr><td>郭靖</td><td>50</td><td>襄阳</td><td>降龙十八掌</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="row row_02">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="myform" method="post" acton="http://www.baidu.com" class="form-group form-inline">
+                    <div>
+                        <label>姓名</label>
+                        <input type="text" class="form-control" id="username" name="username"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>年龄</label>
+                        <input type="text" class="form-control" id="age" name="age"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>密码</label>
+                        <input type="password" class="form-control" id="passwd" name="passwd"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>重复密码</label>
+                        <input type="password" class="form-control" id="aginpasswd" name="aginpasswd"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>电话号码</label>
+                        <input type="text" id="telphone" name="telphone" class="form-control"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>性别</label>
+                        <input type="radio" id="boy" name="sex" value="1"/>
+                        <input type="radio" id="girl" name="sex" value="0"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>爱好</label>
+                        <input type="checkbox" id="football" name="lover" value="0"/>
+                        <input type="checkbox" id="basketball" name="lover" value="1"/>
+                        <input type="checkbox" id="pingpang" name="lover" value="2"/><span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <label>其它</label>
+                        <select class="select" id="subject" name="subject">
+                            <option value=""></option>
+                            <option value="语文">语文</option>
+                            <option value="数学">数学</option>
+                            <option value="英语">英语</option>
+                        </select>
+                        <span class="error_msg"></span>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="tijiao">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

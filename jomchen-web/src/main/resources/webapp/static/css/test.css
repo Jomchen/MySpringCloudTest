@@ -1,0 +1,35 @@
+.fu {
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 998;
+    display: block;
+
+}
+.fu-contant-fu {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    width: 50%;
+    background-color: green;
+}
+.col00 {
+    background-color: red;
+}
+.col01 {
+    background-color: green;
+}
+.col02 {
+    background-color: blue;
+}
+.error_msg {
+    color: red;
+    font-weight: bold;
+}

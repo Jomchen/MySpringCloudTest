@@ -1,0 +1,18 @@
+server:
+  port:  8080
+spring:
+  application:
+    name:  service-web
+  thymeleaf:
+    prefix:  classpath:/webapp/
+  mvc:
+#    view:
+#      prefix:  /
+#      suffix:  .html
+    static-path-pattern:  /webapp/static/**
+  resources:
+    static-locations:  classpath:/webapp/static/
+    chain:
+      strategy:
+        content:
+          enabled:  true
