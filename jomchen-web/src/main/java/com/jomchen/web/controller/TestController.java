@@ -11,7 +11,6 @@ public class TestController {
 
     @RequestMapping("/goTestPage")
     public String goTestPage() {
-        System.out.println("经过了 Test 控制层");
         return "/views/test/test";
     }
 
