@@ -1,15 +1,15 @@
 server:
-  port:  8080
+  port: 8080
 spring:
   application:
-    name:  service-web
+    name: service-web
   thymeleaf:
-    prefix:  classpath:/webapp # 默认是 classpath:/templates/
-    suffix:  .html # 默认是 .html
+    prefix: classpath:/webapp # 默认是 classpath:/templates/
+    suffix: .html # 默认是 .html
   mvc:
 #    view:
 #      prefix:  /
 #      suffix:  .html
-    static-path-pattern:  /webapp/static/**
+    static-path-pattern: /webapp/static/**
   resources:
-    static-locations:  classpath:/webapp/static/
+    static-locations: classpath:/webapp/static/
