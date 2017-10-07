@@ -8,8 +8,8 @@ spring:
     suffix: .html # 默认是 .html
   mvc:
 #    view:
-#      prefix:  /
-#      suffix:  .html
+#      prefix: /
+#      suffix: .html
     static-path-pattern: /webapp/static/**
   resources:
     static-locations: classpath:/webapp/static/
