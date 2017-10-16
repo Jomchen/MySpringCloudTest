@@ -6,10 +6,10 @@ spring:
       label: master
       server:
         git:
-          uri:
-          searchPaths: config
-          username:
-          password:
+          uri: # git 地址
+          searchPaths: # git 仓库的文件夹
+          username: # git 仓库的用户名
+          password: # git 仓库的密码
 
 server:
   port: 8888
