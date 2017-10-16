@@ -19,9 +19,9 @@ spring:
   resources:
     static-locations: classpath:/webapp/static/
 
-  cloud:
-    config:
-      uri: http://localhost:8888/
-      name: web
-      profile: dev
-      label: master
+#  cloud:
+#    config:
+#      uri: http://localhost:8888/
+#      name: web
+#      profile: dev
+#      label: master
