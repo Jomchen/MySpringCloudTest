@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: service-web
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true   # 强制设定 http request 和 response 编码的支持
   thymeleaf:
     prefix: classpath:/webapp # 默认是 classpath:/templates/
     suffix: .html # 默认是 .html
@@ -13,3 +18,10 @@ spring:
     static-path-pattern: /webapp/static/**
   resources:
     static-locations: classpath:/webapp/static/
+
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      name: web
+      profile: dev
+      label: master

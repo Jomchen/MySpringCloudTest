@@ -14,6 +14,8 @@
         <module>jomchen-eurekaclient</module>
         <module>jomchen-ribbon</module>
         <module>jomchen-feign</module>
+        <module>jomchen-zuul</module>
+        <module>jomchen-config</module>
     </modules>
 
     <parent>
