@@ -1,5 +1,6 @@
 package com.jomchen.web.controller;
 
+import com.jomchen.web.common.UrlConstants;
 import com.jomchen.web.redis.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,26 +22,26 @@ public class TestController {
     @Value("${personal.password}")
     private String personalPassword;*/
 
-    /*@RequestMapping("/testGitConfig")
+    /*@RequestMapping(UrlConstants.TEST_GIT_CONFIG)
     @ResponseBody
     public String testGitConfig() {
         return "{name: " + personalUsername + ", password: " + personalPassword + "}";
     }*/
 
-    /*@RequestMapping("/putString")
+    /*@RequestMapping(UrlConstants.TEST_PUT_String)
     @ResponseBody
     public String putString(String name) {
         redisService.putString("name", name);
         return "success";
     }
 
-    @RequestMapping("/getString")
+    @RequestMapping(UrlConstants.TEST_GET_STRING)
     @ResponseBody
     public String getString(String name) {
         return redisService.getString(name);
     }*/
 
-    @RequestMapping("/goTestPage")
+    @RequestMapping(UrlConstants.TEST_GO_TEST_PAGE)
     public String goTestPage() {
         return "/views/test/test";
     }
