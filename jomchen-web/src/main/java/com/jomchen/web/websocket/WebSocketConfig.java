@@ -32,7 +32,9 @@ public class WebSocketConfig implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry webSocketHandlerRegistry) {
         webSocketHandlerRegistry.addHandler(myHandler(), "/myHandler")
-                .addInterceptors(new HttpSessionHandshakeInterceptor());    // deal with befor or after with handshake
+                .addInterceptors(new HttpSessionHandshakeInterceptor())     // deal with befor or after with handshake
+                .withSockJS()
+                .setInterceptors(new MyHandlerShake());
     }
 
 

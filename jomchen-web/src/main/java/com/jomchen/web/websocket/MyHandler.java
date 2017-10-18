@@ -11,7 +11,10 @@ public class MyHandler extends TextWebSocketHandler {
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-        super.handleTextMessage(session, message);
+        String data = message.getPayload();
+        System.out.println("WEBSOCKET 得到的信息为 data");
+        TextMessage responseMessage = new TextMessage("你好啊，客户端！！");
+        session.sendMessage(responseMessage);
     }
 
 }

@@ -18,8 +18,8 @@ public class MyHandlerShake implements HandshakeInterceptor {
             ServerHttpResponse serverHttpResponse,
             WebSocketHandler webSocketHandler,
             Map<String, Object> map) throws Exception {
-
-        return false;
+        System.out.println("正在进行 WEBSOCKET 握手协议。。。");
+        return true;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class MyHandlerShake implements HandshakeInterceptor {
             ServerHttpResponse serverHttpResponse,
             WebSocketHandler webSocketHandler,
             Exception e) {
-        System.out.println("你经过了一个 web socket 的握手处理后方法。。。");
+        System.out.println("WEBSOCKET 握手协议成功。。。");
     }
 
 }

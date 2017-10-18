@@ -28,4 +28,9 @@ public class AllController {
         return resultObj;
     }
 
+    @RequestMapping(UrlConstants.ALL_WEB_SOCKET_PAGE)
+    public String web_socket_page() {
+        return "/views/all/web_socket_page";
+    }
+
 }
