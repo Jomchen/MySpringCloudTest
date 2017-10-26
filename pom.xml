@@ -17,6 +17,7 @@
         <module>jomchen-zuul</module>
         <module>jomchen-config</module>
         <module>jomchen-zipkin</module>
+        <module>jomchen-common</module>
     </modules>
 
     <parent>
