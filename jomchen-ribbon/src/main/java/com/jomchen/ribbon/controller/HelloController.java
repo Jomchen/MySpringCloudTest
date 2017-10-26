@@ -21,4 +21,11 @@ public class HelloController {
     public String hi(@RequestParam String name) {
         return helloService.hiService(name);
     }
+
+    @RequestMapping(value = "/testZipkin")
+    @ResponseBody
+    public String testZipkin(String name) {
+        return helloService.testZipkin(name);
+    }
+
 }

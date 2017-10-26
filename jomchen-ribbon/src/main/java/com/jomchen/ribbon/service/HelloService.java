@@ -19,6 +19,15 @@ public class HelloService {
         return restTemplate.getForObject("http://SERVICE-HI/hi?name=" + name, String.class);
     }
 
+    @HystrixCommand(fallbackMethod = "testZipkinError")
+    public String testZipkin(String name) {
+        return restTemplate.getForObject("http://service-feign/testZipkin?name=" + name, String.class);
+    }
+
+    public String testZipkinError(String name) {
+        return name + "testZipkinError is Error";
+    }
+
     public String hiError(String name) {
         return name + " is Error";
     }

@@ -16,6 +16,7 @@
         <module>jomchen-feign</module>
         <module>jomchen-zuul</module>
         <module>jomchen-config</module>
+        <module>jomchen-zipkin</module>
     </modules>
 
     <parent>

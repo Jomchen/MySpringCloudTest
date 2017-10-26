@@ -23,4 +23,10 @@ public class FeignController {
         return schedualServiceHi.sayHiFromClientOne(name);
     }
 
+    @RequestMapping(value = "/testZipkin")
+    @ResponseBody
+    public String testZipkin(@RequestParam String name) {
+        return name + " testZipkin is SUCCESS";
+    }
+
 }
