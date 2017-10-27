@@ -1,12 +1,8 @@
 package com.jomchen.web.controller;
 
-import com.jomchen.web.common.UrlConstants;
-import com.jomchen.web.redis.RedisService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import com.jomchen.common.util.UrlConstants;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Create by Jomchen on 15:11 2017/9/25
