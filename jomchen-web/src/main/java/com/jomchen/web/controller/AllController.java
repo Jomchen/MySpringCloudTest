@@ -1,6 +1,7 @@
 package com.jomchen.web.controller;
 
-import com.jomchen.web.common.ResultObj;
+import com.jomchen.common.util.ErrorEnum;
+import com.jomchen.common.util.ResultObj;
 import com.jomchen.web.common.UrlConstants;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,12 +21,9 @@ public class AllController {
 
     @RequestMapping(value = UrlConstants.ALL_PAGE_00_AJAX, method = RequestMethod.POST)
     @ResponseBody
-    public ResultObj page_00_ajax(String name) {
+    public ResultObj<String> page_00_ajax(String name) {
         // TODO AJAX 如果返回字符串会请求失败，一直未解决
-        ResultObj resultObj = new ResultObj();
-        resultObj.setCode(ResultObj.SUCCESS);
-        resultObj.setObj(name);
-        return resultObj;
+        return new ResultObj(ErrorEnum.SUCCESS, name);
     }
 
     @RequestMapping(UrlConstants.ALL_WEB_SOCKET_PAGE)
