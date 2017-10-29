@@ -1,4 +1,4 @@
-package com.jomchen.web.common;
+package com.jomchen.common.util;
 
 /**
  * Create by Jomchen on 15:14 2017/10/17
