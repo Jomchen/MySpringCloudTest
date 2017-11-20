@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Create by Jomchen on 9:50 2017/9/25
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.jomchen.common.util"})
 public class WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
