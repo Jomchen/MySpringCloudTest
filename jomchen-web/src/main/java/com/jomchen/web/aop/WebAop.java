@@ -26,6 +26,7 @@ public class WebAop {
     public void handlWeb(ProceedingJoinPoint pjp) {
         String name = pjp.getTarget().getClass().getName();
         String method = pjp.getSignature().getName();
+        Object[] args = pjp.getArgs();
         log.warn(name + "--" + method);
         try {
             pjp.proceed();
