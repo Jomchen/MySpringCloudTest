@@ -1,4 +1,4 @@
-package com.jomchen.parent.entity;
+package com.jomchen.parent.entity.common;
 
 import java.io.Serializable;
 

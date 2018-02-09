@@ -1,5 +1,7 @@
 package com.jomchen.parent.entity;
 
+import com.jomchen.parent.entity.common.BaseEntity;
+
 import java.util.Date;
 
 /**
