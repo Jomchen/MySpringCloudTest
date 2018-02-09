@@ -10,7 +10,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void handleCustomer(Customer customer) {
-        System.out.println(customer.getCname());
+        System.out.println("这个用户的名字叫做：" + customer.getCname());
     }
 
 }
