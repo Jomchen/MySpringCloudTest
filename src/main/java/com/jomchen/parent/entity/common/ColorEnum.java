@@ -15,7 +15,7 @@ public enum ColorEnum {
     YELLOW("黄色", 4),
     PINK("粉色", 5),
     BROWN("褐色", 6),
-    SILLVER("银色", 7),
+    SILVER("银色", 7),
 
     ;
 
