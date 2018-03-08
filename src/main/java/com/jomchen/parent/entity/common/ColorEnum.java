@@ -49,5 +49,11 @@ public enum ColorEnum {
         return null;
     }
 
+    public String getColorName() {
+        return colorName;
+    }
 
+    public Integer getColorCode() {
+        return colorCode;
+    }
 }

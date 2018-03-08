@@ -6,7 +6,12 @@ import com.jomchen.parent.service.CustomerService;
 import com.jomchen.parent.service.impl.CustomerServiceImpl;
 
 import java.lang.reflect.Proxy;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalUnit;
+import java.util.*;
+import java.util.regex.Pattern;
 
 
 /**
@@ -15,21 +20,34 @@ import java.util.Date;
 public class Test {
     public static void main(String[] args) {
 
-        Customer customer = new Customer(1, 20, "李寻欢", new Date(), "京城");
-        CustomerServiceImpl customerService = new CustomerServiceImpl();
-        ((CustomerService) Proxy.newProxyInstance(
-                customerService.getClass().getClassLoader(),
-                customerService.getClass().getInterfaces(),
-                (proxy, method, args_) -> {
-                    System.out.println("开始。。。");
-                    Object obj = method.invoke(customerService, args_);
-                    System.out.println("结束。。。");
-                    return obj;
-                }
-        )).handleCustomer(customer);
+        /*Date date = new Date();
+        LocalDateTime localDateTime = LocalDateTime.now();
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
+
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now.getMonthValue());*/
+
+        /*LocalDateTime now = LocalDateTime.now();
+        LocalDateTime myTime = LocalDateTime.of(
+            2018, 05, 20,
+                22, 22, 22,
+                00
+        );
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        LocalDateTime newTime = myTime.plusDays(1).withDayOfMonth(1);
+        System.out.println(myTime.atZone(ZoneId.systemDefault()).toInstant().getEpochSecond());
+        System.out.println("now: " + dateTimeFormatter.format(now));
+        System.out.println("myTime: " + dateTimeFormatter.format(myTime));
+        System.out.println("newTime: " + dateTimeFormatter.format(newTime));*/
+
+        String dateTimeStr = "2008-08-08 08:08:08";
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime localDateTime = LocalDateTime.parse(dateTimeStr, dateTimeFormatter);
+        System.out.println(dateTimeFormatter.format(localDateTime));
 
 
-        ColorEnum colorEnum = ColorEnum.RED.getColorEnumByAttribute("红色");
-        System.out.println(colorEnum);
     }
 }
